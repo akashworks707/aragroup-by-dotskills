@@ -1,0 +1,234 @@
+/* 
+Theme Name: Aragroup By DotSkills
+Theme URI: http://dotskillsbd.com/wp-theme
+Description: This theme is child theme of Hello Elementor, created by DotSkills team
+Author: DotSkills
+Author URI: http://dotskillsbd.com
+Template: hello-elementor
+Version: 2.0.0
+Text Domain: hello-elementor-child
+License: GNU General Public License v3 or later.
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
+Tags: flexible-header, custom-colors, custom-menu, custom-logo, editor-style, featured-images, rtl-language-support, threaded-comments, translation-ready
+*/
+
+/* Add your custom styles here */
+
+/*========== Header Design Start to here ===========*/
+.header-section .categori-search .elementor-widget-shortcode{
+	width: 100%;
+}
+.header-section .categori-search .elementor-widget-shortcode #product-search-form{
+	display: flex;
+	align-items: center;
+	border: 2px solid;
+	border-color: var( --e-global-color-primary );
+	border-radius: 6px;
+}
+.header-section .categori-search .elementor-widget-shortcode #product-category{
+	width: 35%;
+	border: none;
+	background: none;
+	padding-top: 13px;
+	padding-bottom: 13px;
+	cursor: pointer;
+}
+.header-section .categori-search .elementor-widget-shortcode .search-field{
+	border: none;
+	position: relative;
+	border-left: 1px solid;
+	border-color: rgba(0,0,0,0.1);
+	margin-left: 10px;
+	border-radius: 0;
+	height: 30px;
+}
+.header-section .categori-search .elementor-widget-shortcode .search-field:focus{
+	outline: none;
+}
+.header-section .categori-search .elementor-widget-shortcode .search-submit{
+	width: 25%;
+	border: none;
+	border-radius: 0;
+    text-transform: uppercase;
+    font-family: var( --e-global-typography-text-font-family ), Sans-serif;
+	font-size: 14px;
+	line-height: 14px;
+	font-weight: 800;
+	color: var( --e-global-color-2c4afe6 );
+	background: var( --e-global-color-primary );
+	height: 47px;
+}
+.header-section .header-info-col .help-number .elementor-icon-list-item,
+.header-section .header-info-col .login-btn .elementor-icon-list-item{
+	position: relative;
+	padding-right: 30px;
+}
+.header-section .header-info-col .login-btn .elementor-icon-list-item:before{
+	content: "My Account";
+	position: absolute;
+	font-family: var( --e-global-typography-text-font-family ), Sans-serif;
+	font-size: 12px;
+	line-height: 14px;
+	font-weight: 600;
+	color: #848484;
+	left: 38px;
+	top: -8px;
+}
+.header-section .header-info-col .help-number .elementor-icon-list-item:before{
+	content: "Need Help?";
+	position: absolute;
+	font-family: var( --e-global-typography-text-font-family ), Sans-serif;
+	font-size: 12px;
+	line-height: 14px;
+	font-weight: 600;
+	color: #848484;
+	left: 40px;
+	top: -8px;
+}
+.header-section .header-info-col .help-number .elementor-icon-list-text,
+.header-section .header-info-col .login-btn .elementor-icon-list-text,
+.header-section .header-info-col .my-cart .elementor-button-text{
+	margin-top: 9px;
+}
+.header-section .header-info-col .login-btn .elementor-icon-list-text:hover{
+	color: var( --e-global-color-primary );
+}
+.header-section .header-info-col .help-number:hover .elementor-icon-list-icon svg,
+.header-section .header-info-col .login-btn:hover .elementor-icon-list-icon svg{
+	fill: var( --e-global-color-primary );
+}
+.header-section .my-cart .elementor-menu-cart__toggle_button{
+	border: none;
+	display: flex;
+	flex-direction: unset;
+	column-gap: 12px;
+	position: relative;
+}
+.header-section .my-cart .elementor-menu-cart__toggle_button:before{
+	content: "My Cart";
+	position: absolute;
+	font-family: var( --e-global-typography-text-font-family ), Sans-serif;
+	font-size: 12px;
+	line-height: 14px;
+	font-weight: 600;
+	color: #848484;
+	left: 63px;
+	top: 6px;
+}
+.header-menu-secion .wish-cout .wishlist-count{
+	position: absolute;
+	top: -7px;
+	background: var( --e-global-color-primary );
+	color: var( --e-global-color-2c4afe6 );
+	min-width: 19px;
+	min-height: 19px;
+	text-align: center;
+	line-height: 18px;
+	border-radius: 50%;
+	left: 17px;
+	font-size: 12px;
+}
+.header-menu-secion .wish-cout svg{
+	width: 25px;
+	transition: 0.4s;
+}
+.header-menu-secion .wish-cout a:hover svg{
+	fill: var( --e-global-color-primary );
+}
+/* === shop-categories-dropdown === */
+.header-menu-secion .shop-categories-dropdown {
+    position: relative;
+    display: inline-block;
+}
+.header-menu-secion .shop-categories-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    left: 0;
+    top: 100%;
+    overflow: hidden;
+}
+
+.header-menu-secion .parent-category {
+    position: relative;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+}
+
+.header-menu-secion .parent-category-image img {
+    max-width: 30px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.header-menu-secion .parent-category-link {
+    font-weight: bold;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.header-menu-secion .child-categories {
+    margin-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.header-menu-secion .child-category-link {
+    display: block;
+    padding: 5px 0;
+    text-decoration: none;
+    color: #333;
+}
+.header-menu-secion .shop-categories-dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+.header-menu-secion .shop-categories-dropdown .shop-categories-btn{
+	border: none;
+	padding: 0;
+	font-family: var( --e-global-typography-text-font-family ), Sans-serif;
+	color: var( --e-global-color-text );
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+.header-menu-secion .shop-categories-dropdown{
+	width: 100%;
+}
+.header-menu-secion .shop-categories-dropdown .shop-categories-btn i.fa-bars{
+	margin-right: 15px;
+	color: #00000073;
+}
+.header-menu-secion .shop-categories-dropdown .shop-categories-btn:hover i.fa-bars{
+	color: var( --e-global-color-primary );
+}
+.header-menu-secion .shop-categories-dropdown .shop-categories-btn i.fa-angle-down{
+	margin-left: auto;
+}
+.header-menu-secion .shop-categories-dropdown .shop-categories-btn span{
+	font-size: 15px;
+	line-height: 21px;
+	font-weight: 800;
+}
+.header-menu-secion .shop-categories-dropdown .shop-categories-btn:hover{
+	background: none;
+	color: var( --e-global-color-primary );
+}
+.header-menu-secion .shop-categories-dropdown .child-categories{
+	display: none;
+}
+.header-menu-secion .shop-categories-dropdown .parent-category:hover .child-categories{
+	display: block;
+	position:absolute;
+	right: -143px;
+	background: #fff;
+	z-index: 999;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	padding: 8px;
+}
+/*========== Header Design Here to End ===========*/
+
